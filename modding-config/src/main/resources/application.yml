@@ -7,6 +7,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zwOrion/SecretiveOwnerMC
-          search-paths: src/main
+          uri: https://github.com/zwOrion/modding
+          search-paths: modding-config/config-server
           default-label: master
