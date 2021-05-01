@@ -1,0 +1,12 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: modding-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zwOrion/SecretiveOwnerMC
+          search-paths: src/main
+          default-label: master

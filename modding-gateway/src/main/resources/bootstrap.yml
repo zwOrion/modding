@@ -1,0 +1,36 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: modding-gateway
+  cloud:
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+#      routes:
+#        - id: modding-test
+#          uri: lb://modding-test
+#          predicates:
+#            - Path=/modding-test/**
+#        - id: modding-test-t
+#          uri: lb://modding-test-t
+#          predicates:
+#            - Path=/modding-test-t/**
+    nacos:
+      config:
+        server-addr: http://127.0.0.1:8848
+        file-extension: yaml
+        shared-configs:
+          - data-id: swagger-router.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+      server-addr: http://127.0.0.1:8848
+      discovery:
+        server-addr: http://127.0.0.1:8848
+logging:
+  level:
+    org.springframework.cloud.gateway: trace
+

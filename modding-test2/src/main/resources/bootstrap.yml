@@ -1,0 +1,14 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: modding-test-t
+
+
+  cloud:
+    nacos:
+      config:
+        server-addr: http://127.0.0.1:8848
+      server-addr: http://127.0.0.1:8848
+      discovery:
+        server-addr: http://127.0.0.1:8848
