@@ -44,6 +44,7 @@ public class SwaggerConfig {
     private String version;
     @Value("${swagger.api-info.description:swagger}")
     private String description;
+
     @Bean
     public Docket docket() {
         return new Docket(DocumentationType.SWAGGER_2)
@@ -70,5 +71,5 @@ public class SwaggerConfig {
         securitySchemes.add(new ApiKey("Authorization", "Authorization", "header"));
         return securitySchemes;
     }
-    
+
 }

@@ -13,7 +13,7 @@
     <artifactId>modding-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>modding-parent</name>
-    <description>Demo project for Spring Boot</description>
+    <description>spring cloud parent pom</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -38,6 +38,8 @@
         <module>modding-test2</module>
         <module>modding-doc</module>
         <module>modding-config</module>
+        <module>modding-config-client</module>
+        <module>modding-sso</module>
     </modules>
     <dependencies>
         <dependency>
